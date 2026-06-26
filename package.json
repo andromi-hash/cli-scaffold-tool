@@ -1,0 +1,12 @@
+{
+  "name": "create-turbo-stack",
+  "version": "1.0.0",
+  "description": "Scaffold a production-ready full-stack app in seconds. React, Vue, or Svelte frontend + Express or Fastify backend + Prisma + Auth + Docker + CI.",
+  "type": "module",
+  "bin": {
+    "create-turbo-stack": "./cli.js"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}
