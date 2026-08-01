@@ -29,6 +29,38 @@ Stop copy-pasting boilerplate from old projects. One command scaffolds a complet
 
 ---
 
+## Description
+
+### The problem
+
+Starting a new full-stack project means deciding on frontend, backend, database, auth, Docker, and CI — then wiring them all together. Most developers end up copying from previous projects or spending half a day on setup.
+
+### The shortcut
+
+`create-turbo-stack` asks a few questions and generates a complete, production-ready full-stack app with the exact stack you want. Auth, database, Docker, and CI are already configured.
+
+### Who is this for?
+
+- **Full-stack developers** — start every project the same clean way
+- **Indie hackers** — go from idea to running app in minutes
+- **Agencies** — consistent project scaffolding for clients
+- **Teams** — enforce a standard stack without a custom internal CLI
+
+### What you get
+
+- Interactive CLI
+- Templates for React / Vue / Svelte + Express / Fastify
+- Prisma + JWT auth
+- Docker + docker-compose
+- GitHub Actions CI
+- MIT License
+
+### Tech stack
+
+Node.js CLI · multiple frontend/backend templates
+
+---
+
 ## FAQ
 
 **Do I need Node.js installed?**
@@ -54,3 +86,5 @@ Prisma supports MySQL, MongoDB, and more. Just swap the provider in `schema.pris
 ## Call to Action
 
 [**BUY NOW — $29**]
+
+*30-day refund policy. If this doesn’t speed up your next project, I’ll return your money.*
