@@ -10,23 +10,44 @@ Choose your frontend (React, Vue, Svelte or none), backend (Express or Fastify),
 npx create-turbo-stack
 ```
 
-Or install globally:
+Or from this repo:
 
 ```bash
-npm install -g create-turbo-stack
-create-turbo-stack
+node cli.js
 ```
 
 ## What you get
 
-Interactive prompts to configure:
+Interactive prompts configure:
 
-- **Frontend** — React + Vite, Vue + Vite, Svelte + Vite, or none
-- **Backend** — Express or Fastify with health endpoint
-- **Database** — Prisma + SQLite or PostgreSQL
-- **Auth** — JWT signup/login with bcrypt
-- **Docker** — Dockerfile + docker-compose (Postgres support)
-- **CI** — GitHub Actions workflow
+| Option | Choices |
+|--------|---------|
+| **Frontend** | React + Vite, Vue + Vite, Svelte + Vite, or none |
+| **Backend** | Express or Fastify (health endpoint + optional auth) |
+| **Database** | Prisma + SQLite, Prisma + PostgreSQL, or none |
+| **Auth** | JWT signup/login with bcrypt (mounted on the server) |
+| **Docker** | Dockerfile + docker-compose (Postgres service when selected) |
+| **CI** | GitHub Actions workflow |
+
+### Auth endpoints (when enabled)
+
+```
+POST /api/auth/signup   { email, password, name? }
+POST /api/auth/login    { email, password }
+```
+
+- With Prisma selected → users are stored in the database
+- Without Prisma → in-memory store (fine for demos)
+
+### Generated project quick start
+
+```bash
+cd my-app
+npm install
+npx prisma db push   # if you selected a database
+npm run dev          # frontend
+npm run dev:server   # backend
+```
 
 ## License
 
