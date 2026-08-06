@@ -1,0 +1,29 @@
+{
+  "name": "create-turbo-stack",
+  "version": "1.0.0",
+  "description": "Scaffold a production-ready full-stack app (React/Vue/Svelte + Express/Fastify) with auth, Prisma, Docker, CI",
+  "type": "module",
+  "bin": {
+    "create-turbo-stack": "./bin/create-turbo-stack.js"
+  },
+  "files": [
+    "bin",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "scaffold",
+    "cli",
+    "fullstack",
+    "react",
+    "vue",
+    "svelte",
+    "express",
+    "fastify"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
